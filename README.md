@@ -1,1 +1,1 @@
-# Códigos ue desenvolvi durante a Faculdade
+# Códigos que desenvolvi durante a Faculdade
