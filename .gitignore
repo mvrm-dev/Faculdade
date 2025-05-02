@@ -1,3 +1,6 @@
 .idea/
 .vscode/
+VS Code/.vscode
 out/
+InteliJ/teste
+*.exe
