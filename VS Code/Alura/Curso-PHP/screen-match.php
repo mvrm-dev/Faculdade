@@ -1,19 +1,6 @@
 <?php
 
-function exibeMensagem(int $ano): void {
-    if ($ano > 2022) {
-    echo "Esse filme é um lançamento\n";
-} elseif($ano > 2020 && $ano <= 2022) {
-    echo "Esse filme ainda é novo\n";
-} else {
-    echo "Esse filme não é um lançamento\n";
-}
-
-}
-
-function incluidoNoPlano(bool $planoPrime, int $anoLancamento): bool {
-    return $incluidoNoPlano = $planoPrime || $anoLancamento < 2020;
-}
+require __DIR__  . '/funcoes.php';
 
 echo "Bem-vindo(a) ao screen match!\n";
 
@@ -55,5 +42,14 @@ $filme = [
     "genero" => "super-herói",
 ];
 
+echo $filme["ano"] . "\n";
 
-echo $filme["ano"];
+var_dump($notas);
+sort($notas);
+var_dump($notas);
+$menorNota = min($notas);
+var_dump($menorNota);
+
+var_dump($filme['nome']);
+$posicaoDoDoisPontos = stripos($filme['nome'], ':');
+var_dump(substr($filme['nome'], 0, $posicaoDoDoisPontos));
